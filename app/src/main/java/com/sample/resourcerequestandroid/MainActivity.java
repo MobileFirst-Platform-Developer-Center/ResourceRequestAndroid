@@ -10,7 +10,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.HashMap;
 import com.worklight.wlclient.api.*;
-//import com.worklight.wlclient.api.WLClient;
 import com.worklight.wlclient.api.WLResourceRequest;
 
 public class MainActivity extends AppCompatActivity {
