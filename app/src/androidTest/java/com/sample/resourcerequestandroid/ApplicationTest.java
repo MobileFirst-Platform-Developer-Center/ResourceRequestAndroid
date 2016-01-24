@@ -1,4 +1,4 @@
-package sample.com.resourcerequest;
+package com.sample.resourcerequestandroid;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

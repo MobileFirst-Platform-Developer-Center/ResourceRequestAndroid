@@ -1,4 +1,4 @@
-package sample.com.resourcerequest;
+package com.sample.resourcerequestandroid;
 
 import org.junit.Test;
 

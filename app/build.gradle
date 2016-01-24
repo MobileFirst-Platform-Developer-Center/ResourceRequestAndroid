@@ -11,7 +11,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "sample.com.resourcerequest"
+        applicationId "com.sample.resourcerequestandroid"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
@@ -23,6 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     packagingOptions {
         pickFirst 'META-INF/ASL2.0'
         pickFirst 'META-INF/LICENSE'
@@ -35,6 +36,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
+
     compile group: 'com.ibm.mobile.foundation',
             name: 'ibmmobilefirstplatformfoundation',
             version: '8.0.Beta1-SNAPSHOT',
