@@ -95,7 +95,7 @@
     <orderEntry type="library" exported="" name="jackson-jaxrs-1.9.13" level="project" />
     <orderEntry type="library" exported="" name="ibmmobilefirstplatformfoundation-8.0.Beta1-SNAPSHOT" level="project" />
     <orderEntry type="library" exported="" name="okio-1.6.0" level="project" />
-    <orderEntry type="library" exported="" name="bcprov-jdk15on-1.48" level="project" />
     <orderEntry type="library" exported="" name="okhttp-2.7.0" level="project" />
+    <orderEntry type="library" exported="" name="bcprov-jdk15on-1.48" level="project" />
   </component>
 </module>
