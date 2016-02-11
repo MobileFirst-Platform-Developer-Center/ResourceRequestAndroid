@@ -1,6 +1,6 @@
 IBM MobileFirst Platform Foundation
 ===
-### ResourceRequestAndroid
+## ResourceRequestAndroid
 
 ### Tutorials
 https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/resource-request-from-android-applications/
