@@ -1,6 +1,7 @@
 IBM MobileFirst Platform Foundation
 ===
 ## ResourceRequestAndroid
+A sample application demonstrating the use to the WLResourceRequest API in Java.
 
 ### Tutorials
 https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/resource-request-from-android-applications/
