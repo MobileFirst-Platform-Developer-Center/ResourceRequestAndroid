@@ -7,6 +7,6 @@
     <string name="last_name">Last Name</string>
     <string name="age">Age</string>
     <string name="height">Height</string>
-    <string name="date">Date</string>
+    <string name="birthdate">Birthdate</string>
     <string name="button_send">Submit</string>
 </resources>

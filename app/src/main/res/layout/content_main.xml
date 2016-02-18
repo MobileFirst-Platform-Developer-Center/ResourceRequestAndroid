@@ -45,10 +45,10 @@
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/date"
+        android:id="@+id/birthdate"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/date"
+        android:hint="@string/birthdate"
         android:inputType="text" />
 
     <Button xmlns:android="http://schemas.android.com/apk/res/android"

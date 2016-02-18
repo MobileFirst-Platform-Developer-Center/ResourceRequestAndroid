@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView last_name = null;
     private TextView age = null;
     private TextView height = null;
-    private TextView date = null;
+    private TextView birthdate = null;
     private static TextView summary = null;
     private Button sendButtonm;
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         last_name = (TextView) findViewById(R.id.last_name);
         age = (TextView) findViewById(R.id.age);
         height = (TextView) findViewById(R.id.height);
-        date = (TextView) findViewById(R.id.date);
+        birthdate = (TextView) findViewById(R.id.birthdate);
         summary = (TextView) findViewById(R.id.summary);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     request.setQueryParameter("age", age.getText().toString());
 
                     // Header Parameters
-                    request.addHeader("date", date.getText().toString());
+                    request.addHeader("birthdate", birthdate.getText().toString());
 
                     // Form Parameters
                     HashMap formParams = new HashMap();
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                                         + " " + response.getResponseJSON().getString("last") + "\n";
                                 resultText += "Age = " + response.getResponseJSON().getInt("age") + "\n";
                                 resultText += "Height = " + response.getResponseJSON().getString("height") + "\n";
-                                resultText += "Date = " + response.getResponseJSON().getString("Date");
+                                resultText += "Birthdate = " + response.getResponseJSON().getString("birthdate");
                             } catch (org.json.JSONException e) {
                                 _this.updateTextView(e.getMessage());
                             }
