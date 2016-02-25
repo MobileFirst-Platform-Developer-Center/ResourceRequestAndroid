@@ -12,7 +12,7 @@ https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-m
 2. Ensure the sample is registered in the MobileFirst Server by running the command: `mfpdev app register`.
 3. The sample uses the `JavaAdapter` contained in the Adapters Maven project. Use either Maven or MobileFirst Developer CLI to [build and deploy the adapter](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/creating-adapters/).
 4. To test or debug an adapter, see the [testing and debugging adapters](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/adapters/testing-and-debugging-adapters) tutorial.
-5. Import the project to Android Studio, and run the sample by clicking the **Run* button.
+5. Import the project to Android Studio, and run the sample by clicking the **Run** button.
 
 Resource Request adapter: https://github.com/MobileFirst-Platform-Developer-Center/Adapters/tree/release80
 
@@ -20,7 +20,7 @@ Resource Request adapter: https://github.com/MobileFirst-Platform-Developer-Cent
 IBM MobileFirst Platform Foundation 8.0
 
 ### License
-Copyright 2015 IBM Corp.
+Copyright 2016 IBM Corp.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
