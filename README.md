@@ -11,7 +11,6 @@ https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-m
 1. Use either Maven or MobileFirst Developer CLI to build and deploy the `JavaAdapter` adapter.
 
   The `JavaAdapter` adapter can be found in https://github.com/MobileFirst-Platform-Developer-Center/Adapters/tree/release80.
-
 2. From the command line, navigate to the project's root folder.
 3. Ensure the sample is registered in the MobileFirst Server by running the command: `mfpdev app register`.
 4. Import the project to Android Studio, and run the sample by clicking the **Run** button.
