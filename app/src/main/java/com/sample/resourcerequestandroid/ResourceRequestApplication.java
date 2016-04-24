@@ -21,7 +21,7 @@ import android.util.Log;
 import com.worklight.wlclient.api.WLClient;
 
 
-public class MyApplication extends Application {
+public class ResourceRequestApplication extends Application {
 
     @Override
     public void onCreate() {
