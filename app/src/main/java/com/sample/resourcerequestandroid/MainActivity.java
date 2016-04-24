@@ -29,7 +29,6 @@ import com.worklight.wlclient.api.*;
 import com.worklight.wlclient.api.WLResourceRequest;
 
 public class MainActivity extends AppCompatActivity {
-    private WLClient client = null;
     private static MainActivity _this;
     private TextView first_name = null;
     private TextView middle_name = null;
@@ -44,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         _this = this;
-        WLClient.createInstance(this);
 
         setContentView(R.layout.activity_main);
         first_name = (TextView) findViewById(R.id.first_name);
