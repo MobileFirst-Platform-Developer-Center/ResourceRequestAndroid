@@ -26,23 +26,19 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.HashMap;
 import com.worklight.wlclient.api.*;
-import com.worklight.wlclient.api.WLResourceRequest;
 
 public class MainActivity extends AppCompatActivity {
-    private static MainActivity _this;
     private TextView first_name = null;
     private TextView middle_name = null;
     private TextView last_name = null;
     private TextView age = null;
     private TextView height = null;
     private TextView birthdate = null;
-    private static TextView summary = null;
-    private Button sendButtonm;
+    private TextView summary = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        _this = this;
 
         setContentView(R.layout.activity_main);
         first_name = (TextView) findViewById(R.id.first_name);
@@ -56,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        sendButtonm = (Button) findViewById(R.id.button_send);
-        sendButtonm.setOnClickListener(new View.OnClickListener() {
+        Button sendButton = (Button) findViewById(R.id.button_send);
+        sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
@@ -76,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                     request.addHeader("birthdate", birthdate.getText().toString());
 
                     // Form Parameters
-                    HashMap formParams = new HashMap();
+                    HashMap<String,String> formParams = new HashMap<>();
                     formParams.put("height", height.getText().toString());
 
                     // Send
@@ -93,18 +89,18 @@ public class MainActivity extends AppCompatActivity {
                                 resultText += "Height = " + response.getResponseJSON().getString("height") + "\n";
                                 resultText += "Birthdate = " + response.getResponseJSON().getString("birthdate");
                             } catch (org.json.JSONException e) {
-                                _this.updateTextView(e.getMessage());
+                                updateTextView(e.getMessage());
                             }
 
                             Log.d("InvokeSuccess", responseText);
-                            _this.updateTextView(resultText);
+                            updateTextView(resultText);
                         }
 
                         public void onFailure(WLFailResponse response) {
                             //String responseText = response.getResponseText();
                             String errorMsg = response.getErrorMsg();
                             Log.d("InvokeFail", errorMsg);
-                            _this.updateTextView("Failed to Invoke Adapter Procedure\n" + errorMsg);
+                            updateTextView("Failed to Invoke Adapter Procedure\n" + errorMsg);
                         }
                     });
 
@@ -115,12 +111,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public static void updateTextView(final String str){
+    public void updateTextView(final String str){
         Runnable run = new Runnable() {
             public void run() {
                 summary.setText(str);
             }
         };
-        _this.runOnUiThread(run);
+        this.runOnUiThread(run);
     }
 }
